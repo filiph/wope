@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-xs-7 form-group form-group-lg">
+    <textarea #input class="form-control" rows="20"
+              placeholder="{{PLACEHOLDER_TEXT}}"
+              (keyup)="update(output, input.value, !autoCheckbox.checked)"></textarea>
+    <div class="row">
+      <div class="col-xs-6 checkbox">
+        <label>
+          <input #autoCheckbox type="checkbox" checked> Auto-update always
+        </label>
+        <span>or <a (click)="update(output, input.value)">manually update now</a></span>
+      </div>
+      <div class="col-xs-6 text-right">
+        <div>
+          <a class="btn" disabled><div class="glyphicon glyphicon-chevron-left"></div></a>
+          Current version
+          <a class="btn" disabled><div class="glyphicon glyphicon-chevron-right"></div></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="col-xs-5">
+    <wope-output #output></wope-output>
+  </div>
+</div>

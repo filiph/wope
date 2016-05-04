@@ -1,0 +1,9 @@
+p {
+  font-size: initial;
+  font-family: sans-serif;
+  color: red;
+}
+
+#output {
+  border: 1px solid green;
+}

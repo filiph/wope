@@ -1,0 +1,9 @@
+<ul class="nav nav-tabs">
+  <li *ngFor="#translator of translators"
+      [class.active]="currentTranslator == translator">
+    <a href="#" (click)="setTranslator(translator)">{{translator.name}}</a>
+  </li>
+</ul>
+
+<div [class.hidden]="!currentTranslator.outputsHtml" id="output"></div>
+<pre [class.hidden]="currentTranslator.outputsHtml">{{plainOutput}}</pre>
