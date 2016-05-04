@@ -1,0 +1,20 @@
+{
+  "ngDeps": {
+    "1": "ast_renderer",
+    "3": [
+      {
+        "1": "package:markdown/markdown.dart",
+        "5": false
+      },
+      {
+        "1": "dart:collection",
+        "5": false
+      },
+      {
+        "1": "dart:developer",
+        "5": false
+      }
+    ],
+    "6": "ast_renderer.dart"
+  }
+}

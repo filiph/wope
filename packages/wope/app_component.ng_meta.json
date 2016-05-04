@@ -1,0 +1,99 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "package:markdown/markdown.dart",
+        "4": "md",
+        "5": false
+      },
+      {
+        "1": "dart:html",
+        "5": false
+      },
+      {
+        "1": "package:wope/output/output_component.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "AppComponent",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'my-app'"
+              },
+              {
+                "1": "templateUrl",
+                "2": "'app_component.html'"
+              },
+              {
+                "1": "directives",
+                "2": "const [OutputComponent]"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "8": [
+          {
+            "2": "OutputComponent"
+          }
+        ]
+      }
+    ],
+    "6": "app_component.dart",
+    "10": [
+      {
+        "1": "package:angular2/angular2.ng_deps.dart",
+        "4": "i0"
+      },
+      {
+        "1": "package:wope/output/output_component.ng_deps.dart",
+        "4": "i1"
+      }
+    ]
+  },
+  "AppComponent": {
+    "kind": "type",
+    "value": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "my-app",
+      "exportAs": null,
+      "type": {
+        "name": "AppComponent",
+        "moduleUrl": "asset:wope/lib/app_component.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "<div class=\"row\">\n  <div class=\"col-xs-7 form-group form-group-lg\">\n    <textarea #input class=\"form-control\" rows=\"20\"\n              placeholder=\"{{PLACEHOLDER_TEXT}}\"\n              (keyup)=\"update(output, input.value, !autoCheckbox.checked)\"></textarea>\n    <div class=\"row\">\n      <div class=\"col-xs-6 checkbox\">\n        <label>\n          <input #autoCheckbox type=\"checkbox\" checked> Auto-update always\n        </label>\n        <span>or <a (click)=\"update(output, input.value)\">manually update now</a></span>\n      </div>\n      <div class=\"col-xs-6 text-right\">\n        <div>\n          <a class=\"btn\" disabled><div class=\"glyphicon glyphicon-chevron-left\"></div></a>\n          Current version\n          <a class=\"btn\" disabled><div class=\"glyphicon glyphicon-chevron-right\"></div></a>\n        </div>\n      </div>\n\n    </div>\n  </div>\n  <div class=\"col-xs-5\">\n    <wope-output #output></wope-output>\n  </div>\n</div>\n",
+        "templateUrl": "asset:wope/lib/app_component.html",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      }
+    }
+  }
+}
